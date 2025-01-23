@@ -1,5 +1,4 @@
-fn main()
-{
+fn main() {
     cxx_build::bridge("src/lib.rs")
         .file("src/AssociativeContainers.cc")
         .file("src/Ciphertext.cc")
@@ -13,6 +12,7 @@ fn main()
         .file("src/LWEPrivateKey.cc")
         .file("src/Params.cc")
         .file("src/Plaintext.cc")
+        .file("src/Poly.cc")
         .file("src/PrivateKey.cc")
         .file("src/PublicKey.cc")
         .file("src/SchemeBase.cc")
@@ -85,7 +85,7 @@ fn main()
 
     // linking OpenMP
     println!("cargo::rustc-link-arg=-fopenmp");
-    
+
     // necessary to avoid LD_LIBRARY_PATH
     println!("cargo::rustc-link-arg=-Wl,-rpath,/usr/local/lib");
 }

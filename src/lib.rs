@@ -169,6 +169,7 @@ pub mod ffi
         include!("openfhe/src/Params.h");
         include!("openfhe/src/Plaintext.h");
         include!("openfhe/src/PrivateKey.h");
+        include!("openfhe/src/Poly.h");
         include!("openfhe/src/PublicKey.h");
         include!("openfhe/src/SchemeBase.h");
         include!("openfhe/src/SequenceContainers.h");
@@ -211,6 +212,8 @@ pub mod ffi
         type ParamsBGVRNS;
         type ParamsCKKSRNS;
         type Plaintext;
+        type Poly;
+        type PolyParams;
         type PrivateKeyDCRTPoly;
         type PublicKeyDCRTPoly;
         type SchemeBaseDCRTPoly;
